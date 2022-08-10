@@ -6,7 +6,7 @@
     --light-color: rgb(0, 0, 0);
     --light-color-alt: #000000;
     --primary-background-color: #ffffff;
-    --secondary-background-color: #dc08f8;
+    --secondary-background-color: #9f5ef9;
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
     --transparent-light-color: rgba(255, 255, 255, .05);
