@@ -363,7 +363,7 @@ i {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .company-data {
+    .blog-data {
         order: 0;
     }
 
@@ -429,11 +429,11 @@ i {
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .company-data {
+    .blog-data {
         grid-column: span 2;
     }
 
-    .company-description {
+    .blog-description {
         max-width: 85%;
     }
 
