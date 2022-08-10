@@ -56,29 +56,9 @@
         </nav>
     </header>
 
-    <!-- Search -->
-    <div class="search-bar container" id="search-bar">
-
-        <div class="bar-inner">
-
-            <form action="" class="form">
-                <input class="form-input" type="text" placeholder="Search for a post">
-                <button class="btn form-btn" type="submit">
-                    <i class="search-line"></i>
-                </button>
-            </form>
-            <span class="form-note">Or press ESC to close.</span>
-
-        </div>
-
-        <button class="btn form-close-btn place-items-center" id="form-close-btn">
-            <i class="close-line"></i>
-        </button>
-
-    </div>
-
     <!--- SIGN UP FORM-->
-    <form name="signupForm" action="signup.php" style="border:1px solid #ccc" onsubmit="return validateForm()" method="post">
+    <form name="signupForm" action="signup.php" style="border:1px solid #ccc" onsubmit="return validateForm()"
+        method="post">
         <div class="container">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
@@ -88,10 +68,21 @@
             <input type="text" placeholder="Enter Email" name="email" required>
     
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
     
             <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+    
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+    
     
             <label>
                 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -140,51 +131,50 @@
 
             <div>
                 <h6 class="title footer-title">Categories</h6>
+            
                 <ul class="footer-list list">
                     <li class="list-item">
-                        <a href="#" class="list-link">Travel</a>
+                        <a href="#" class="list-link">KIT202</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Food</a>
+                        <a href="#" class="list-link">KIT203</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Technology</a>
+                        <a href="#" class="list-link">KIT107</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Health</a>
+                        <a href="#" class="list-link">KIT206</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Nature</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Fitness</a>
+                        <a href="#" class="list-link">KIT101</a>
                     </li>
                 </ul>
+            
             </div>
-
+            
             <div>
-                <h6 class="title footer-title">Useful links</h6>
+                <h6 class="title footer-title">Units</h6>
+            
                 <ul class="footer-list list">
                     <li class="list-item">
                         <a href="#" class="list-link">Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Elements</a>
+                        <a href="./uni_info.html" class="list-link">University Information</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Tags</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Authors</a>
+                        <a href="#" class="list-link">Students</a>
                     </li>
                     <li class="list-item">
                         <a href="#" class="list-link">Membership</a>
                     </li>
                 </ul>
+            
             </div>
-
+            
             <div>
                 <h6 class="title footer-title">Company</h6>
+            
                 <ul class="footer-list list">
                     <li class="list-item">
                         <a href="#" class="list-link">Contact us</a>
@@ -202,6 +192,7 @@
                         <a href="#" class="list-link">Memberships</a>
                     </li>
                 </ul>
+            
             </div>
         </div>
     </footer>
