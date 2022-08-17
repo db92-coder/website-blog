@@ -1,0 +1,27 @@
+.signupbtn {
+    padding: 4px 2px;
+    background-color: green;
+}
+.cancelbtn {
+    padding: 4px 2px;
+    background-color: red
+}
+.signupbtn, .cancelbtn{
+    float: left;
+    width: 6%;
+    border-radius: 5px; 
+    margin: 3px;
+    right: 50%;
+}
+
+.cancelbtn{
+    position: absolute;
+    right: 37%;
+    top: 35%;
+}
+
+.signupbtn{
+    position: absolute;
+    right: 30%;
+    top: 35%;
+}
